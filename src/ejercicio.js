@@ -7,7 +7,7 @@ const numeroFicha = 3412768;
 const NOTA_MINIMA_APROBACION = 3;
 
 // Arreglo con tres calificaciones numéricas
-const calificaciones = [2.2, 1.8, 2.5];
+const calificaciones = [4.2, 3.8, 1.5];
 
 // Cálculo del promedio
 const promedio = (calificaciones[0] + calificaciones[1] + calificaciones[2]) / 3;
