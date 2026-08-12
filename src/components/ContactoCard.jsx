@@ -1,23 +1,55 @@
-// ContactoCard.jsx
-// Este componente muestra UN contacto de la agenda.
-// Recibe datos (props): nombre, telefono, correo, etiqueta.
+export default function ContactoCard({ 
 
-export default function ContactoCard({ nombre, telefono, correo, etiqueta }) {
-  return (
-    <div className="card-contacto">
-      {/* Nombre del contacto en negrita */}
-      <h3 className="card-nombre">{nombre}</h3>
+ id, 
 
-      {/* Teléfono */}
-      <p className="card-linea">📞 {telefono}</p>
+nombre, 
+ telefono, 
 
-      {/* Correo */}
-      <p className="card-linea">📧 {correo}</p>
+ correo, 
 
-      {/* Etiqueta adicional, si existe (por ejemplo: "Instructor", "Cliente", "Compañera") */}
-      {etiqueta && (
-        <p className="card-etiqueta">{etiqueta}</p>
-      )}
-    </div>
-  );
-}
+ etiqueta, 
+
+onDelete, 
+
+}) { 
+
+return ( 
+
+ <article className="tarjeta-contacto"> 
+
+ <h3>{nombre} </h3> 
+
+{etiqueta && <p className="tag">{etiqueta}</p>} 
+
+<p>📞 {telefono}</p> 
+ {correo && <p>✉️ {correo}</p>} 
+
+ 
+
+ 
+
+ <div className="acciones"> 
+
+ <button 
+
+ type="button" 
+
+ className="btn-eliminar" 
+
+onClick={() => onDelete(id)} 
+
+ > 
+
+ Eliminar 
+
+ </button> 
+
+ </div> 
+
+ </article> 
+
+ ); 
+
+} 
+
+ 
