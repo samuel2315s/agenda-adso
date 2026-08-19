@@ -1,105 +1,42 @@
-import { useState } from "react"; 
+import { useState, useEffect } from "react";
+import "./App.css";
+import FormularioContacto from "./components/FormularioContacto";
+import ContactoCard from "./components/ContactoCard";
 
-import "./App.css"; 
+export default function App() {
+  const contactosGuardados =
+    JSON.parse(localStorage.getItem("contactos")) || [];
 
-import ContactoCard from "./components/ContactoCard"; 
+  const [contactos, setContactos] = useState(contactosGuardados);
 
-import FormularioContacto from "./components/FormularioContacto"; 
+  useEffect(() => {
+    localStorage.setItem("contactos", JSON.stringify(contactos));
+  }, [contactos]);
 
- 
+  const agregarContacto = (nuevo) => {
+    setContactos((prev) => [...prev, nuevo]);
+  };
 
-export default function App() { 
- const [contactos, setContactos] = useState([ 
+  const eliminarContacto = (correo) => {
+    setContactos((prev) => prev.filter((c) => c.correo !== correo));
+  };
 
- { 
+  return (
+    <main className="app-container">
+      <h1 className="app-title">Agenda ADSO v3</h1>
+      <p className="subtitulo">
+        Persistencia con localStorage + UI moderna
+      </p>
 
- id: 1, 
+      <FormularioContacto onAgregar={agregarContacto} />
 
-nombre: "Carolina Pérez", 
-
-telefono: "300 123 4567", 
-
-correo: "carolina@sena.edu.co", 
-
- etiqueta: "Compañera", 
-
-}, 
-{ 
-
- id: 2, 
-
-nombre: "Juan Gómez", 
-
-telefono: "300 987 6543", 
-
-correo: "juan@google.com", 
-
- etiqueta: "Compañero", 
-
-}, 
- ]); 
-
- 
-
-// Agregar 
-
-const agregarContacto = (nuevo) => { 
-
-setContactos((prev) => [...prev, { id: Date.now(), ...nuevo }]); 
-
-}; 
-
- 
-
- // Eliminar 
-
- const eliminarContacto = (id) => { 
-
-setContactos((prev) => prev.filter((c) => c.id !== id)); 
-
-}; 
-
- 
-
-return ( 
-
-<main className="app-container"> 
- <h1 className="app-title">Agenda ADSO v2</h1> 
-
- 
-
-<FormularioContacto onAgregar={agregarContacto} /> 
-
- 
-
-<section className="lista-contactos"> 
-
-{contactos.map((c) => ( 
-
- <ContactoCard 
-
-key={c.id} 
-
-id={c.id} 
-
-nombre={c.nombre} 
-
-telefono={c.telefono} 
-
- correo={c.correo} 
-
- etiqueta={c.etiqueta} 
-
-onDelete={eliminarContacto} 
-
- /> 
-
- ))} 
-
- </section> 
-
- </main> 
-
-); 
-
-} 
+      {contactos.map((c) => (
+        <ContactoCard
+          key={c.correo}
+          {...c}
+          onEliminar={eliminarContacto}
+        />
+      ))}
+    </main>
+  );
+}
