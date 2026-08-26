@@ -1,0 +1,19 @@
+{
+  "contactos": [
+    {
+      "nombre": "miguel",
+      "telefono": "3215670987",
+      "correo": "miguel@gmail.com",
+      "etiqueta": "compañero",
+      "id": "KK44C87_yFk"
+    },
+    {
+      "nombre": "sergio",
+      "telefono": "3243566",
+      "correo": "sergio@gmail.com",
+      "etiqueta": "compañero",
+      "id": "gQQpfITzVOQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
