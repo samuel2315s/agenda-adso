@@ -13,6 +13,13 @@
       "correo": "sergio@gmail.com",
       "etiqueta": "compañero",
       "id": "gQQpfITzVOQ"
+    },
+    {
+      "nombre": "duque",
+      "telefono": "321567098763",
+      "correo": "duque@gmail.com",
+      "etiqueta": "compañero",
+      "id": "p4OO2BFJH6Q"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
