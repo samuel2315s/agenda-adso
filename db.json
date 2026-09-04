@@ -20,6 +20,13 @@
       "correo": "duque@gmail.com",
       "etiqueta": "compañero",
       "id": "p4OO2BFJH6Q"
+    },
+    {
+      "nombre": "samuel",
+      "telefono": "345322424",
+      "correo": "samuel@gmail.com",
+      "etiqueta": "compañero",
+      "id": "0pucMxOavN8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
