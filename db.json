@@ -5,28 +5,7 @@
       "telefono": "3215670987",
       "correo": "miguel@gmail.com",
       "etiqueta": "compañero",
-      "id": "KK44C87_yFk"
-    },
-    {
-      "nombre": "sergio",
-      "telefono": "3243566",
-      "correo": "sergio@gmail.com",
-      "etiqueta": "compañero",
-      "id": "gQQpfITzVOQ"
-    },
-    {
-      "nombre": "duque",
-      "telefono": "321567098763",
-      "correo": "duque@gmail.com",
-      "etiqueta": "compañero",
-      "id": "p4OO2BFJH6Q"
-    },
-    {
-      "nombre": "samuel",
-      "telefono": "345322424",
-      "correo": "samuel@gmail.com",
-      "etiqueta": "compañero",
-      "id": "0pucMxOavN8"
+      "id": "nHbVi-2PA_0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
