@@ -12,7 +12,7 @@ import {
   listarContactos,
   crearContacto,
   eliminarContactoPorId,
-} from "../src/API";
+} from "./api";
 
 // Importamos la configuración global de la aplicación
 import { APP_INFO } from "./config";
