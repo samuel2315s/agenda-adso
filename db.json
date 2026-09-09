@@ -6,6 +6,41 @@
       "correo": "miguel@gmail.com",
       "etiqueta": "compañero",
       "id": "nHbVi-2PA_0"
+    },
+    {
+      "nombre": "sheryl",
+      "telefono": "4245678",
+      "correo": "sheryl@gamil.com",
+      "etiqueta": "",
+      "id": "3EHgrQhybqo"
+    },
+    {
+      "nombre": "sofia",
+      "telefono": "3456332",
+      "correo": "sofia@gmail.com",
+      "etiqueta": "amiga",
+      "id": "HCJ_qN80xWg"
+    },
+    {
+      "nombre": "duque",
+      "telefono": "3456332655",
+      "correo": "Duque@gmail.com",
+      "etiqueta": "compañero",
+      "id": "OcIAYA9JLXw"
+    },
+    {
+      "nombre": "belli",
+      "telefono": "08496239456237460",
+      "correo": "belli@gmail.com",
+      "etiqueta": "compañero",
+      "id": "DbtMdTa9Uh8"
+    },
+    {
+      "nombre": "miguel",
+      "telefono": "3215670987",
+      "correo": "miguel@gmail.com",
+      "etiqueta": "compañero",
+      "id": "9ZQ3l04xNdI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

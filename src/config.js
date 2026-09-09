@@ -10,7 +10,7 @@ export const APP_INFO = {
   // Número de ficha que se muestra en el encabezado
   ficha: "3412768",
   // Título principal de la aplicación
-  titulo: "Agenda ADSO v7",
+  titulo: "Agenda ADSO v8",
   // Subtítulo o descripción corta que aparece debajo del título
   subtitulo:
     "Gestión de contactos conectada a una API local con JSON Server, con validaciones y mejor experiencia de usuario.",
